@@ -66,7 +66,7 @@
         1. sudo chown praveen test.txt
       sudo chown user:groupFileName test.txt
         1.sudo chown preveen:preveen test.txt
-    -To create a new Owner---
+    -To create a new user---
      -> sudo useradd -m username
       -> sudo useradd -m nani
     -to Delete a user
@@ -181,7 +181,9 @@
 37.awk(Text processing):
   Example: awk '{print $1}' filename
 
-38.sed(Steam Editor): it process the text file. it works line by line 
+38.sed(Steam Editor): it process the text file. it works line by line
+   -> It is used to edit streams (files) using regular expressions.
+   -> But this editing is not permanent. It remains only in display, but in actual, file content remains the same.
   Example: sed -n '100,200p' filename
 
 39. | (pipe): used to combine multiple commands, pipe convert the output of the one command as th input for thr anthor command
@@ -201,3 +203,13 @@
 2.Stop the browser application from the command line?
  ->
 
+41.lsof(List Open Files): It is a command-line utility used in Unix-like operating systems, including Linux, to report a list of all open files and the     processes that opened them. This includes,
+  1.Regular files
+  2.Directories
+  3.Network connections (sockets)
+  4.Pipes
+  5.Devices
+  6.File names and paths
+  7.Process IDs (PIDs) and names
+  8.File types (e.g., regular file, directory, socket)
+ 
