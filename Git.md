@@ -340,4 +340,3 @@ Example:
 git config --global alias.st 'status'
 ```
 
-kdkmdk
