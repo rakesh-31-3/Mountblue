@@ -498,3 +498,51 @@ Example:
 ```bash
 git config --global alias.st 'status'
 ```
+
+## Git Reset:
+
+### git reset is used to undo the changes.it help us to roll back the previous state. it has three main forms.
+
+### 1.git reset --soft [commit]:it moves the head to the specified commit but leaves the changes in the staging area.
+
+### 2.git reset --mixed [commit](defualt):it moves the head to the specified commit and remvoes the changes in the staging area.
+
+### 3.git reset --hard [commit]: it moves the head to the specified commit and remove all changes in the staging area and current working directory.
+
+## Git Revert:
+
+### git revert is also used to undo the changes. but git reset changes the commit history and git revert create a new commit that undoes the changes made by the previous commit.
+
+### git revert [commit]
+
+```bash
+git revert aa2b2b4
+```
+
+## Git Merge:
+
+### git merge used to integrate the changes from diffrent branches to single branch.
+
+```bash
+git merge [branchname]
+```
+
+### This command will merge a specified branch into the current branch.
+
+### Fast-Forword Merge: if current branch has no commits since our target branch has created,Git simply moves the pointer forword.this is called fast-forword merge.
+
+### Three-way Merge: if there are changes in the both the branches since the target branch created,then git performs the three way merge.it finds the common base commit and creates the new merge commit that combines the both the changes.
+
+## Git Rebase:
+
+### Git rebase is used to integrate the changes from one branch to anthor
+
+```bash
+git rebase [branchname]
+```
+
+### it takes the commits from the specified branch and applies the changes on top of the current branch
+
+### Interactive Rebase::
+
+### You can use git rebase -i [base-commit] to enter an interactive mode where you can edit, reorder, or squash commits before they are applied.

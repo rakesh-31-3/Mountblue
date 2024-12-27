@@ -85,8 +85,10 @@ Flags:
 -n: specifies the number of lines
 tail -n 10 filename.txt --> displays the last 10 lines of the file
 
-17.rsync(Remote Synchronization):
-
+17.rsync(Remote Synchronization):syncronize the file systems
+it's like copy the files
+rsync -av folder folder
+git
 18.grep(Global regularExpression print): used to search the text
 Example: grep [pattern] [filename]
 Flags:
@@ -122,6 +124,7 @@ Flags:
 24.ps(process status): used to display process status
 Example: ps -ef
 ps aux
+ps -e
 
 25.top(real time process Monitoring):
 Example : top
